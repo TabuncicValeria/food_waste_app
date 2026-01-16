@@ -1,0 +1,112 @@
+.share-modal {
+    max-width: 500px;
+}
+
+.share-item-info {
+    padding: var(--spacing-md);
+    background-color: var(--bg-secondary);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.share-item-info h3 {
+    margin: 0 0 var(--spacing-xs) 0;
+    color: var(--text-primary);
+}
+
+.share-item-category {
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+    margin: 0;
+}
+
+.share-message-preview {
+    margin-bottom: var(--spacing-lg);
+}
+
+.share-message-preview h4 {
+    margin: 0 0 var(--spacing-sm) 0;
+    color: var(--text-primary);
+    font-size: var(--font-size-md);
+}
+
+.message-text {
+    padding: var(--spacing-md);
+    background-color: var(--bg-tertiary);
+    border-radius: var(--radius-md);
+    border-left: 3px solid var(--primary-color);
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.platform-selection h4 {
+    margin: 0 0 var(--spacing-md) 0;
+    color: var(--text-primary);
+    font-size: var(--font-size-md);
+}
+
+.platform-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+}
+
+.platform-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-lg);
+    background-color: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-base);
+    cursor: pointer;
+}
+
+.platform-btn:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.platform-btn.selected {
+    border-color: var(--primary-color);
+    background-color: var(--primary-light);
+    box-shadow: var(--shadow-md);
+}
+
+.platform-icon {
+    font-size: 2rem;
+}
+
+.platform-btn span:last-child {
+    font-weight: var(--font-weight-medium);
+    color: var(--text-primary);
+}
+
+.platform-btn.instagram.selected {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-color: #bc1888;
+}
+
+.platform-btn.instagram.selected span {
+    color: white;
+}
+
+.platform-btn.facebook.selected {
+    background-color: #1877f2;
+    border-color: #1877f2;
+}
+
+.platform-btn.facebook.selected span {
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .platform-options {
+        grid-template-columns: 1fr;
+    }
+}

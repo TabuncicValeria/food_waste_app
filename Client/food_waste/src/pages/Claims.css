@@ -1,0 +1,77 @@
+.claims {
+    width: 100%;
+}
+
+.claims-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.claim-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.claim-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+}
+
+.claim-header h3 {
+    flex: 1;
+}
+
+.claim-status {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-medium);
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.claim-status-pending {
+    background-color: var(--warning-color);
+    color: white;
+}
+
+.claim-status-approved {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.claim-status-rejected {
+    background-color: var(--error-light);
+    color: var(--error-color);
+}
+
+.claim-status-completed {
+    background-color: var(--info-color);
+    color: white;
+}
+
+.claim-status-cancelled {
+    background-color: var(--danger-color);
+    color: white;
+}
+
+.claim-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.claim-details p {
+    color: var(--text-secondary);
+    font-size: var(--font-size-sm);
+}
+
+@media (max-width: 768px) {
+    .claims-grid {
+        grid-template-columns: 1fr;
+    }
+}
